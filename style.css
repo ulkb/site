@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #1a3036;
+    background-color: #f6f6f6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+h1, h2, h4, h5, h6 {
+    margin: 0 0 25px;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 5px 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    margin: 0 0 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+/* Container
+--------------*/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header_0
+-----------*/
+
+.header_0 {
+    height: 18px;
+    background: #0c1c3b;
+}
+
+.header_0__inner {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 10px;
+}
+
+.header_0__info {
+    color: #a0d2f2;
+}
+
+.header_0__office {
+    color: #fff;
+}
+
+.header_0__num {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    float: right !important;
+}
+
+/* Header
+-----------*/
+
+.header {
+    height: 60px;
+    background: #01b2fe;
+    padding: 8px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nav
+--------*/
+
+.nav {
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+.nav__link {
+    margin: 0 15px;
+    color: #fff;
+    opacity: .75;
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+/* Burger 
+------------*/
+
+.burger {
+    display: none;
+}
+
+.burger__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    
+    background-color: #fff;
+    
+    font-size: 0;
+    color: transparent;
+}
+
+/* Way
+--------*/
+
+.way {
+    margin: 20px 0;
+    padding: 5px 15px;
+    width: 100%;
+    background-color: #EDEDED;
+    font-size: 16px;
+}
+
+/* Button
+-----------*/
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 1px;
+    border: 0;
+    padding: 14px 40px;
+    
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    font-family: inherit;
+    
+    transition: background .1s linear;
+}
+
+.btn__blue{
+    background-color: #01b2fe;
+    
+}
+
+.btn__blue:hover {
+    background-color: #029adb;
+}
+
+
+/* Ref
+--------*/
+
+.ref {
+    color: #01b2fe;
+    transition: color 0.1s linear;
+}
+
+.ref:hover {
+    color: #046d9a;
+    text-decoration: underline;
+}
+
+/* Footer
+-----------*/
+
+.footer {
+    padding: 40px 10px;
+    height: 90vh;
+    background: url(img/footer.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.f_title{
+    text-align: left;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.f_text{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.f_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input {
+    margin: 10px 0;
+}
+
+.f_input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #f0f0f0;
+    font-size: 16px;
+}
+
+.f_textarea {
+    width:100%;
+    margin: 10px 0;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #f0f0f0;
+    font-size: 16px;
+    resize: none;
+}
+
+.f_inf {
+    display:flex;
+    flex-wrap: wrap;
+}
+.f_inf1 {
+    margin-left: 70px;
+}
+
+.f_inf1 span {
+    color: #f0f0f0;
+}
+
+.f_name {
+    color: #b5b5b5;
+    font-weight: 590;
+}
+
+/* Media
+----------*/
+
+@media (max-width: 810px) {
+    body {
+        font-size: 12px;
+    }
+    h1, h2, h4, h5, h6 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+    ul {
+        font-size: 12px;
+    }
+    
+    .header_0__info {
+        display: none !important;
+    }
+    .header_0 {
+        height: 14px;
+    }
+    
+    .header_0__office {
+        font-size: 8px; 
+    }
+    
+    .header_0__num {
+        font-size: 10px;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    /* Burger */
+    
+    .burger {
+        display: block;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+    
+    .footer {
+        height: 110vh;
+    }
+}
